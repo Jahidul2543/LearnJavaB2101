@@ -48,9 +48,7 @@ public class FileReadingDemo {
         catch (IOException exception){
             exception.printStackTrace();
         }
-
        //characterList.forEach(c-> System.out.println(c));
-
         return characterList;
 
     }
