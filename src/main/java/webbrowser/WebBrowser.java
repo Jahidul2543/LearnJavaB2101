@@ -18,7 +18,7 @@ public class WebBrowser {
         // getBolg(driver);
         // dropDown(driver);
         // downloadFile(driver);
-        driver.close();
+         tearDown(driver);
 
     }
     public static WebDriver setUp(){
@@ -36,6 +36,10 @@ public class WebBrowser {
           System.out.println("Page Title " + driver.getTitle());
           return driver;
      }
+
+    public static void tearDown(WebDriver driver){
+        driver.close();
+    }
     public static void logIn(WebDriver driver){
          //driver.navigate().to("http://www.google.com");
          // Write username
